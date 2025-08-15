@@ -1,22 +1,3 @@
-function totalFine( fare ) {
-    if(typeof  fare !== "number" || fare<= 0) {
-        return "Invalid";
-    }
-    let surcharge = fare * 0.2;
-    let serviceCharge = 30;
-    let total = fare + surcharge +serviceCharge;
-    return total;
-}
-
-function  onlyCharacter( str ) {
-    if (typeof str !== "string") {
-        return "Invalid";
-    }
-    let cleaned = str.replace(/\s+/g, "").toUpperCase();
-    return cleaned;
-}
-
-
 function  bestTeam( player1, player2 ) {
     if (typeof player1 !== "object" || typeof player2 !== "object" || player1 === null || player2 === null || Array.isArray(player1) || Array.isArray(player2)) {
         return "Invalid"
